@@ -2,7 +2,7 @@
 // get a gify API key
 // prepend 10 new gifs to the previous ones 
 
-var themes = ["make-up", "girl", "hair", "dancing", "nails", "shopping", "Regina George", "Amy Schumer", "Hey Girl"];
+var themes = ["Make-Up", "Girls", "Hair", "Dancing", "Nails", "Shopping", "Regina George", "Amy Schumer", "Hey Girl", "Elle Woods"];
 
 
 function newButton() {
@@ -74,8 +74,8 @@ $("#submit").on("click", function (event) {
     var userInput = $("#userInput").val().trim();
     themes.push(userInput);
     $("#userInput").val('');
-    newButton()
-    gif()
+    newButton();
+    gif();
 
 });
 

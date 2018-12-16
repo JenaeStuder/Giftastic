@@ -1,3 +1,8 @@
+/* 
+font-family: 'Staatliches', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Coming Soon', cursive; */
+
 body{
     background-image:url(../images/abstract-art-artistic-1328891.jpg);
     background-size: 100%;
@@ -5,9 +10,35 @@ body{
     background-position: top;
   background-attachment: fixed;
 }
+.jumbotron{
+    height:300px;
+    
+}
+header{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Fredericka the Great', cursive;
+}
 p{
    color: white;
+   font-size: 30px;
 }
-#gifs{
-    float: left;
+
+#userInput{
+    font-family: 'Fredericka the Great', cursive;
+    margin:0px 0px 0px 200px;
+
+}
+input{
+    font-family: 'Fredericka the Great', cursive;
+    /* margin:40px 200px; */
+
+}
+#newButton{
+    font-family: 'Fredericka the Great', cursive;
+    padding: 5px;
+    margin: 30px 200px;
+    
 }
