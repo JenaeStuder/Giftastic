@@ -2,7 +2,7 @@
 // get a gify API key
 // prepend 10 new gifs to the previous ones 
 
-var themes = ["make-up", "girl", "hair", "dancing", "nails", "shopping", "Regina George","Amy Schumer"];
+var themes = ["make-up", "girl", "hair", "dancing", "nails", "shopping", "Regina George", "Amy Schumer", "Hey Girl"];
 
 
 function newButton() {
@@ -14,20 +14,12 @@ function newButton() {
         $("#newButton").append(btn);
     }
 
-   
+
 }
 newButton()
-//SEARCH BAR
-$("#search").click(function () {
-    event.preventDefault();
-    var userInput = $("#serch").val();
-    themes.push(userInput)
-
-newButton()
-    console.log(userInput);
-});
 
 
+function gif(){
 // var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=o8GPWiI5gIoVgwKv6WedRsH2jCfeTn2a&limit=5");
 // xhr.done(function(data) { console.log("success got data", data); });
 $("button").click(function () {
@@ -46,10 +38,10 @@ $("button").click(function () {
 
             for (var ii = 0; ii < results.length; ii++) {
                 var girlDiv = $("<div>");
-                var rating = results[ii];
+                rating = results[ii];
                 var p = $('<p>').text("Rating: " + results[ii].rating);
                 var girlImage = $('<img>');
-                girlImage.attr('src', results[ii].images.fixed_height.url);
+                girlImage.attr('src', results[ii].images.fixed_height_still.url);
                 girlImage.attr("data-animate", results[ii].images.fixed_height.url);
                 girlImage.attr("data-still", results[ii].images.fixed_height_still.url);
                 girlImage.attr("data-state", "animate");
@@ -57,25 +49,38 @@ $("button").click(function () {
                 girlDiv.append(p, girlImage);
                 $('#gifs').prepend(girlDiv);
             }
-            
-            //PAUSING THE GIF AND RESTRTING IT
+
+            //PAUSING THE GIF AND RE-STARTING IT
             $(document).on("click", ".pic", function () {
                 var state = $(this).attr("data-state")
-                console.log(state);
-                if (state === "still") {
+                if (state == "animate") {
+                    $(this).attr("src", $(this).attr("data-still"));
+                    $(this).attr("data-state", "still");
+                } else {
                     $(this).attr("src", $(this).attr("data-animate"));
                     $(this).attr("data-state", "animate");
 
-                } else {
-                    $(this).attr("src", $(this).attr("data-still"));
-                    $(this).attr("data-state", "still");
                 }
-                
+
             });
         });
+});
+};
+gif()
 
+//SEARCH BAR
+$("#submit").on("click", function (event) {
+    event.preventDefault();
+    var userInput = $("#userInput").val().trim();
+    themes.push(userInput);
+    $("#userInput").val('');
+    newButton()
+    gif()
 
 });
+
+
+
 
 // $(document).on("click", "#userInput", function(){
 //     var userInput = $(this).attr("data-name");
