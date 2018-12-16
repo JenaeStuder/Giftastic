@@ -24,6 +24,7 @@ header{
 p{
    color: white;
    font-size: 30px;
+   font-family: 'Coming Soon', cursive;
 }
 
 #userInput{
@@ -41,4 +42,8 @@ input{
     padding: 5px;
     margin: 30px 200px;
     
+}
+h3{
+    font-family: 'Coming Soon', cursive; 
+    color: white; 
 }
