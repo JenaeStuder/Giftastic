@@ -8,11 +8,7 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
-  background-attachment: fixed;
-}
-.jumbotron{
-    height:300px;
-    
+    background-attachment: fixed;
 }
 header{
     color: white;

@@ -32,10 +32,10 @@ function gif() {
         })
             .then(function (response) {
                 console.log(response);
-//tells us what to do with the results of the API results
-//the loop goes through each image and prints the rating
-//above the image and it makes sure each image comes through
-//originally in a still format.
+                //tells us what to do with the results of the API results
+                //the loop goes through each image and prints the rating
+                //above the image and it makes sure each image comes through
+                //originally in a still format.
                 var results = response.data;
 
                 for (var ii = 0; ii < results.length; ii++) {
