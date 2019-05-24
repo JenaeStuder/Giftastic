@@ -2,7 +2,7 @@
 
 https://naenae15232.github.io/Giftastic/
 
-##Giftastic is an HTML, CSS and JavaScript application that utilizes Ajax calls as it queries the giphy API. It also uses logic that allows the user to start the gif when they want to instead of it starting on loading to the screen. It also pulls the gifs ratings and posts them to the top of the gif.
+## Giftastic is an HTML, CSS and JavaScript application that utilizes Ajax calls as it queries the giphy API. It also uses logic that allows the user to start the gif when they want to instead of it starting on loading to the screen. It also pulls the gifs ratings and posts them to the top of the gif.
 
 
 ### Click on the tags already provided to have gifs show up.
