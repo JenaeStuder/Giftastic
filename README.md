@@ -18,10 +18,10 @@ https://naenae15232.github.io/Giftastic/
 ![Giphy 1st page](./assets/images/giphy1.png)
 
 ### If you click on another tab it appends the new gifs to the top of the previously selected ones
-![Giphy 2nd page](./assets/images/giphy2)
+![Giphy 2nd page](./assets/images/giphy2.png)
 
 ### You can also add your own categories. Type them into the search bar and a new tab will append to the top of the screen
-![Giphy 3rd page](./assets/images/giphy3)
+![Giphy 3rd page](./assets/images/giphy3.png)
 
 ### You can add as many categories as you choose and it will always pull random gifs matching the category from the Giphy API
-![Giphy 4th page](./assets/images/giphy4)
+![Giphy 4th page](./assets/images/giphy4.png)
